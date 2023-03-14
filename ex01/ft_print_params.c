@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_program_name.c                            :+:      :+:    :+:   */
+/*   ft_print_params.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: arabelo- <arabelo-@student.42lisboa.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/14 11:42:05 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/03/14 13:55:27 by arabelo-         ###   ########.fr       */
+/*   Created: 2023/03/14 13:43:14 by arabelo-          #+#    #+#             */
+/*   Updated: 2023/03/14 13:53:56 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,21 @@ void	ft_print(char *str)
 		ft_putchar(*str);
 		str++;
 	}
-	ft_putchar('\n');
 }
 
 int	main(int argc, char **argv)
 {
-	(void)argc;
-	ft_print(argv[0]);
+	int	i;
+
+	i = 1;
+	if (argc > 1)
+	{
+		while (i < argc)
+		{
+			ft_print(argv[i]);
+			i++;
+			ft_putchar('\n');
+		}
+	}
 	return (0);
 }
