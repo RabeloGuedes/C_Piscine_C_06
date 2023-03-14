@@ -6,7 +6,7 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/14 16:09:21 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/03/14 16:26:29 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/03/14 18:48:07 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,7 @@ void	ft_display(int argc, char **argv)
 	while (i < argc)
 	{
 		ft_print(argv[i]);
+		ft_putchar('\n');
 		i++;
 	}
 }
