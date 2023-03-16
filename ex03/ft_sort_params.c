@@ -6,7 +6,7 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/14 16:09:21 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/03/14 18:48:07 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/03/16 08:40:57 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ int	ft_strcmp(char *s1, char *s2)
 	i = 0;
 	while (s1[i] == s2[2] && s1[i] && s2[i])
 		i++;
-	return (s1[i] - s2[i]);
+	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
 
 void	ft_display(int argc, char **argv)
